@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins";
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #8758ff;
+}
+
+.main h2 {
+  color: #242446;
+  font-size: 12px;
+  align-items: center;
+}
+
+.box {
+  background-color: #242446;
+  width: 40vw;
+  height: 53vh;
+  border-radius: 10px;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 25px 20px;
+  gap: 15px;
+}
+
+.box-content img {
+  width: 150px;
+}
+
+.box-content p {
+  color: white;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.box-content h2 {
+  background-color: #8758ff;
+  padding: 5px;
+  width: 30%;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+}
+
+.box-content h3 {
+  color: white;
+}
+
+.box-content button {
+  color: white;
+  background-color: #8758ff;
+  padding: 8px 8px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  transition: all ease-in-out 0.4s;
+}
+
+.box-content button:hover {
+  background-color: #9b75f9;
+  transition: all ease-in-out 0.4s;
+  cursor: pointer;
+  transform: scale(0.97);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: 70vw;
+    height: 280px;
+  }
+
+  .box-content img {
+    width: 50px;
+    height: 40px;
+  }
+
+  .box-content h2 {
+    font-size: 10px;
+    text-wrap: nowrap;
+  }
+
+  .box-content p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .box-content h3 {
+    font-size: 14px;
+  }
+
+  .box-content button {
+    font-size: 12px;
+    height: 30px;
+    width: 60px;
+  }
+}
+
+@media (max-width: 360px) {
+  .box {
+    width: 70vw;
+    height: 250px;
+  }
+
+  .box-content img {
+    width: 40px;
+    height: 30px;
+  }
+
+  .box-content h2 {
+    font-size: 9px;
+    text-wrap: nowrap;
+  }
+
+  .box-content p {
+    font-size: 8px;
+    line-height: 18px;
+  }
+
+  .box-content button {
+    font-size: 12px;
+    height: 1.5rem;
+    width: 4rem;
+    padding: 0;
+  }
+}
